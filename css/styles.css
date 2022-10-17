@@ -15,21 +15,6 @@
   --first-background-color: #ffffff;
   --second-background-color: #2f303a;
 }
-body {
-  font-family: "roboto", sans-serif;
-  color: var(--main-text-color);
-}
-button {
-  cursor: pointer;
-}
-.advantages-title,
-.service-title,
-.team-title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
           /*----------RESET STYLES----------*/
 p,
 h1,
@@ -54,7 +39,24 @@ address {
 img {
   display: block;
 }
-
+body {
+  font-family: "roboto", sans-serif;
+  color: var(--main-text-color);
+}
+.advantages-title,
+.service-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.container {
+  width:1600px ;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
           /* ----------SITE HEADER---------- */
 .site-header {
   background-color: var(--first-background-color);
