@@ -52,10 +52,11 @@ body {
   color: var(--main-text-color);
 }
 .container {
-  width:1600px ;
+  width: 1600px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 1000px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
           /* ----------SITE HEADER---------- */
 .site-header {
@@ -66,7 +67,12 @@ body {
 .site-nav-link {
   text-decoration: none;
 }
-
+.site-logo {
+  padding-top:24px;
+  padding-bottom: 25px;
+  padding-right: 93px;
+  padding-left:215px;
+}
 .logo-word-web {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -92,6 +98,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-link-color);
+  padding:32px 0px;
 }
 
 .site-nav-contacts {
@@ -182,9 +189,6 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-.container {
-border: 5px solid brown;
 }
           /*----------PORTFOLIO PAGE MAIN----------*/
 .filter-btn {
