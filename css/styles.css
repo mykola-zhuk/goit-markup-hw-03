@@ -15,7 +15,7 @@
   --first-background-color: #ffffff;
   --second-background-color: #2f303a;
 }
-          /*----------RESET STYLES----------*/
+/*----------RESET STYLES----------*/
 p,
 h1,
 h2,
@@ -51,27 +51,41 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 1000px;
   margin: 0 auto;
   outline: 2px solid red;
 }
-          /* ----------SITE HEADER---------- */
+/* ----------SITE HEADER---------- */
 .site-header {
   background-color: var(--first-background-color);
 }
-
 .site-logo,
 .site-nav-link {
   text-decoration: none;
 }
 .site-logo {
-  padding-top:24px;
+  padding-top: 24px;
   padding-bottom: 25px;
-  padding-right: 93px;
-  padding-left:215px;
+  padding-left: 215px;
 }
 .logo-word-web {
   font-family: "Raleway", sans-serif;
@@ -91,16 +105,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-color-2);
 }
-
+.site-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .site-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-link-color);
-  padding:32px 0px;
+  padding: 32px 0px;
 }
-
 .site-nav-contacts {
   font-weight: 500;
   font-size: 14px;
@@ -108,9 +124,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-          /* ----------STUDIO PAGE MAIN----------  */
+/* ----------STUDIO PAGE MAIN----------  */
+.studio-main {
+}
+/* ----------STUDIO PAGE HERO----------  */
+.studio-hero {
+  background-color: grey;
+}
 .studiio-hero-title {
   font-style: normal;
   font-weight: 900;
@@ -136,7 +160,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
+/* ----------STUDIO PAGE ADVANTAGES----------  */
 .advantages-name {
   font-size: 14px;
   line-height: 1.14;
@@ -150,6 +174,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+/* ----------STUDIO PAGE OUR TEAM----------  */
 .team {
   background-color: var(--btn-background-color);
 }
@@ -178,19 +203,8 @@ body {
 .link:focus {
   color: var(--link-hover-color);
 }
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-          /*----------PORTFOLIO PAGE MAIN----------*/
+
+/*----------PORTFOLIO PAGE MAIN----------*/
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -215,7 +229,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-          /* ----------PORTFOIO PROJECTS---------- */
+/* ----------PORTFOIO PROJECTS---------- */
 .project {
   text-decoration: none;
 }
@@ -231,7 +245,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-          /* ----------SITE FOOTER---------- */
+/* ----------SITE FOOTER---------- */
 .footeer {
   background-color: var(--second-background-color);
 }
