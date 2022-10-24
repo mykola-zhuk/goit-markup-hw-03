@@ -72,7 +72,7 @@ body {
   outline: 2px solid red;
 }
 .section {
-  padding: 94px 0px;
+padding: 94px 0;
 }
 /*--------------------------------*/
 /* ----------SITE HEADER---------- */
@@ -136,8 +136,13 @@ body {
 /* ----------STUDIO PAGE HERO----------  */
 .studio-hero {
   background-color: grey;
+  text-align: center;
 }
 .studiio-hero-title {
+  display: inline-block;
+  padding-top: 200px;
+margin-bottom: 30px;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -146,15 +151,19 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
+
 }
 .studio-hero-btn {
+  min-width: 216px;
+  height: 50px;
+  margin-bottom:200px;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--btn-hover-color);
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -164,11 +173,16 @@ body {
 }
 /* ----------STUDIO PAGE ADVANTAGES----------  */
 .advantages-name {
+margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+}
+.advantages-list {
+  display: flex;
 }
 .advantages-text {
   font-size: 14px;
@@ -176,7 +190,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+/* ----------WHAT WE DO----------  */
+.servise-list {
+  display: flex;
+}
 /* ----------STUDIO PAGE OUR TEAM----------  */
+.team-list {
+  display: flex;
+}
+.team-title {
+  margin-bottom:50px;
+}
 .team {
   background-color: var(--btn-background-color);
 }
@@ -184,6 +208,7 @@ body {
   background-color: var(--third-text-color);
 }
 .team-img {
+  margin: bottom 30px;
 }
 .team-member {
   font-weight: 500;
@@ -193,6 +218,7 @@ body {
   color: var(--main-text-color);
 }
 .team-position {
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
