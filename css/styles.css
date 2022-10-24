@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -135,20 +135,23 @@ padding: 94px 0;
 }
 /* ----------STUDIO PAGE HERO----------  */
 .studio-hero {
-  background-color: grey;
+  background-color:var(--second-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .studiio-hero-title {
-  display: inline-block;
-  padding-top: 200px;
-margin-bottom: 30px;
+  display: block;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
 
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
+letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
 
@@ -156,7 +159,6 @@ margin-bottom: 30px;
 .studio-hero-btn {
   min-width: 216px;
   height: 50px;
-  margin-bottom:200px;
 
   font-family: inherit;
   font-style: normal;
@@ -172,6 +174,9 @@ margin-bottom: 30px;
   border-radius: 4px;
 }
 /* ----------STUDIO PAGE ADVANTAGES----------  */
+.advantages {
+  padding-bottom: 0;
+}
 .advantages-name {
 margin-bottom: 10px;
 
@@ -183,6 +188,7 @@ margin-bottom: 10px;
 }
 .advantages-list {
   display: flex;
+  gap: 30px;
 }
 .advantages-text {
   font-size: 14px;
@@ -191,20 +197,30 @@ margin-bottom: 10px;
   color: var(--second-text-color);
 }
 /* ----------WHAT WE DO----------  */
+.service-title {
+  display: flex;
+  justify-content: center;
+  margin: 0  auto 50px auto;
+}
 .servise-list {
   display: flex;
+  gap: 30px;
 }
 /* ----------STUDIO PAGE OUR TEAM----------  */
 .team-list {
   display: flex;
+  gap: 30px;
 }
 .team-title {
   margin-bottom:50px;
+  display: flex;
+  justify-content: center;
 }
 .team {
   background-color: var(--btn-background-color);
 }
 .team-item {
+
   background-color: var(--third-text-color);
 }
 .team-img {
@@ -233,6 +249,12 @@ margin-bottom: 10px;
 }
 
 /*----------PORTFOLIO PAGE MAIN----------*/
+.filter {
+  margin-bottom: 30px;
+  display: flex;
+justify-content: center;
+gap: 8px;
+}
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -261,6 +283,11 @@ margin-bottom: 10px;
 .project {
   text-decoration: none;
 }
+.projects-list {
+display: flex;
+gap: 30px; 
+flex-wrap: wrap;
+}
 .project-title {
   font-size: 18px;
   line-height: 2;
@@ -277,6 +304,13 @@ margin-bottom: 10px;
 .footeer {
   background-color: var(--second-background-color);
 }
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container .site-logo {
+  margin-bottom:  20px;;
+}
 .footer-logo-word {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -287,6 +321,7 @@ margin-bottom: 10px;
 }
 .adress {
   font-style: normal;
+  margin-bottom: 9px;
 }
 .map-link {
   font-size: 14px;
@@ -295,10 +330,13 @@ margin-bottom: 10px;
   color: var(--third-text-color);
   text-decoration: none;
 }
-.footer-contacts {
+.footer-contact {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.footer-contacts-itm {
+gap: 9px;
 }
