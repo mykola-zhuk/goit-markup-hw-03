@@ -69,7 +69,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 .section {
 padding: 94px 0;
@@ -78,6 +77,7 @@ padding: 94px 0;
 /* ----------SITE HEADER---------- */
 .site-header {
   background-color: var(--first-background-color);
+  border-bottom: 1px solid #ECECEC
 }
 .site-logo,
 .site-nav-link {
@@ -151,7 +151,7 @@ padding: 94px 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
 
@@ -210,23 +210,27 @@ margin-bottom: 10px;
 .team-list {
   display: flex;
   gap: 30px;
+
 }
 .team-title {
   margin-bottom:50px;
   display: flex;
   justify-content: center;
 }
+.team-img {
+  margin-bottom: 30px;
+}
 .team {
   background-color: var(--btn-background-color);
 }
 .team-item {
-
+  padding-bottom: 30px;
+  
   background-color: var(--third-text-color);
 }
-.team-img {
-  margin: bottom 30px;
-}
 .team-member {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -234,7 +238,6 @@ margin-bottom: 10px;
   color: var(--main-text-color);
 }
 .team-position {
-  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -263,7 +266,15 @@ gap: 8px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--btn-color);
-  background: var(--btn-bacground-color);
+  
+  width: 130px;
+  height: 38px;
+  left: 957px;
+  top: 174px;
+
+background: #F5F4FA;
+border-radius: 4px;
+border-color: transparent;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -281,14 +292,23 @@ gap: 8px;
 }
 /* ----------PORTFOIO PROJECTS---------- */
 .project {
-  text-decoration: none;
+padding-bottom: 20px;
+
+text-decoration: none;
+border-bottom: 1px solid #EEEEEE;
 }
 .projects-list {
 display: flex;
 gap: 30px; 
 flex-wrap: wrap;
 }
+.project-img {
+  margin-bottom:20px;
+}
+
 .project-title {
+  margin-bottom:4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
