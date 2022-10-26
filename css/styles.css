@@ -76,6 +76,8 @@ padding: 94px 0;
 /*--------------------------------*/
 /* ----------SITE HEADER---------- */
 .site-header {
+  padding: 25px;
+
   background-color: var(--first-background-color);
   border-bottom: 1px solid #ECECEC
 }
@@ -214,6 +216,7 @@ margin-bottom: 10px;
 }
 .team-title {
   margin-bottom:50px;
+  
   display: flex;
   justify-content: center;
 }
@@ -230,6 +233,7 @@ margin-bottom: 10px;
 }
 .team-member {
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -238,6 +242,8 @@ margin-bottom: 10px;
   color: var(--main-text-color);
 }
 .team-position {
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -253,12 +259,14 @@ margin-bottom: 10px;
 
 /*----------PORTFOLIO PAGE MAIN----------*/
 .filter {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: flex;
 justify-content: center;
 gap: 8px;
 }
 .filter-btn {
+  padding-left: 22px;
+  padding-right: 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -267,14 +275,10 @@ gap: 8px;
   letter-spacing: 0.03em;
   color: var(--btn-color);
   
-  width: 130px;
   height: 38px;
-  left: 957px;
-  top: 174px;
-
-background: #F5F4FA;
-border-radius: 4px;
-border-color: transparent;
+  background: #F5F4FA;
+  border-radius: 4px;
+  border-color: transparent;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -292,8 +296,6 @@ border-color: transparent;
 }
 /* ----------PORTFOIO PROJECTS---------- */
 .project {
-padding-bottom: 20px;
-
 text-decoration: none;
 border-bottom: 1px solid #EEEEEE;
 }
@@ -302,13 +304,10 @@ display: flex;
 gap: 30px; 
 flex-wrap: wrap;
 }
-.project-img {
-  margin-bottom:20px;
+.project-description {
+  padding: 20px 24px;
 }
-
 .project-title {
-  margin-bottom:4px;
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -322,14 +321,16 @@ flex-wrap: wrap;
 }
 /* ----------SITE FOOTER---------- */
 .footeer {
-  background-color: var(--second-background-color);
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  
+  background-color: var(--second-background-color);
 }
 .footer-container .site-logo {
   margin-bottom:  20px;;
+}
+.footer-logo {
+  display: inline-block;
 }
 .footer-logo-word {
   font-family: "Raleway", sans-serif;
@@ -341,22 +342,24 @@ flex-wrap: wrap;
 }
 .adress {
   font-style: normal;
-  margin-bottom: 9px;
 }
 .map-link {
+  display: inline-block;
+  margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   text-decoration: none;
 }
+.footer-contacts-list :first-child {
+  margin-bottom: 9px;
+  }
 .footer-contact {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-.footer-contacts-itm {
-gap: 9px;
 }
