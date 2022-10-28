@@ -306,6 +306,8 @@ flex-wrap: wrap;
 }
 .project-description {
   padding: 20px 24px;
+  border-left: solid #EEEEEE;
+  border-right: solid #EEEEEE;
 }
 .project-title {
   font-size: 18px;
